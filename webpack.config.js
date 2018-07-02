@@ -4,9 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-
-  //  в entry указаны файлы которые надо переобразовать
-  entry: [
+  entry: [     //  в entry указаны файлы которые надо переобразовать
     './src/js/index.js',
     './src/scss/style.scss',
   ],
