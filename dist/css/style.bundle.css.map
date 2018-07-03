@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/scss/src/scss/style.scss"],"names":[],"mappings":"AAAA,MAAU,kBAAsB,UAAU,CAAK,IAAQ,SAAa,SAAU","file":"./css/style.bundle.css","sourcesContent":["h1,h2 {\r  text-align: center;\r  color:GRAY;\r};\rdiv {\r  margin: 0;\r  padding: 0;\r};"],"sourceRoot":""}
