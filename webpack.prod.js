@@ -34,7 +34,6 @@ module.exports = {
     }),
     new ExtractTextPlugin({
       filename: './css/style.bundle.css',
-      allChunks: true,
     }),
   ],
 };
