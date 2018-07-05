@@ -1,8 +1,12 @@
 import { todoList, Tasks } from './model';
-import addTodoItem from './view';
+import View from './view';
 
-export default function createTodo(value) {
-  const todoItem = new Tasks(value);
-  todoList.push(todoItem);
-  addTodoItem(todoItem);
+const view = new View();
+
+export default class Controller {
+  createTodo(value) {
+    const todoItem = new Tasks(value);
+    todoList.push(todoItem);
+    view.addTodoItem(todoItem);
+  }
 }

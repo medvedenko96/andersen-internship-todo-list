@@ -1,9 +1,11 @@
 import '../css/style.css';
-import createTodo from './controller';
+import Controller from './controller';
+
+const cont = new Controller();
 
 const add = document.getElementById('create-todo');
 const input = document.getElementById('input-todo');
 
 add.addEventListener('click', () => {
-  createTodo(input.value);
+  cont.createTodo(input.value);
 });
