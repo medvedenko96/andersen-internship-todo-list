@@ -1,13 +1,5 @@
-/*
-класс View - отвечает за отображение, ререндер (перерендер).
-*/
-import { todoList, addTodoItem } from './index';
-
-export default function render() {
-  if (todoList.length) {
-    for (const todoItem of todoList) {
-      addTodoItem(todoItem);
-    }
-  }
+export default function addTodoItem(todoItem) {
+  const taskItem = document.createElement('li');
+  taskItem.innerHTML = todoItem.title;
+  document.getElementById('todo-container').appendChild(taskItem);
 }
-

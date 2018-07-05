@@ -1,3 +1,9 @@
-/*
-класс Model - хранит айтемы туду листа.
-*/
+const todoList = [];
+
+class Tasks {
+  constructor(title) {
+    this.title = title;
+  }
+}
+
+export { todoList, Tasks };
