@@ -1,7 +1,11 @@
 import '../css/style.css';
-import { union, someArr } from './test';
+import Controller from './controller';
 
-const someArr1 = [1, 2, 3, 4, 5, 5, 66, 66, 7, 7, 88, 8, 7, 6];
+const cont = new Controller();
 
-union(someArr, someArr1);
-console.log(union(someArr, someArr1));
+const add = document.getElementById('create-todo');
+const input = document.getElementById('input-todo');
+
+add.addEventListener('click', () => {
+  cont.createTodo(input.value);
+});
